@@ -1,14 +1,20 @@
 
-import Boton from"./componentes/atoms/Boton";
+
+import Header from "./componentes/organisms/Header";
+import Buscador from "./componentes/organisms/Header";
+
 
 function App(){
   return(
     <div>
-      <h1> Mi tienda</h1>
-      <Boton />
+      
+     <Header/>
+      
     </div>
 
   );
 }
+
+
 
 export default App;
