@@ -11,4 +11,6 @@ function Buscador(){
         </div>
     );
 }
+
+
 export default Buscador;

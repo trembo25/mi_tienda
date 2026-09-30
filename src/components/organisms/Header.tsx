@@ -1,4 +1,5 @@
 import Buscador from "../molecules/Buscador";
+import CardProducto from "../molecules/CardProductos";
 
 
 function Header(){
@@ -13,6 +14,8 @@ function Header(){
             </nav>
             <br />
             <Buscador/>
+            <CardProducto/>
+
 
         </header>
     );

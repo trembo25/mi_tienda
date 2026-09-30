@@ -1,18 +1,43 @@
 
 
-import Header from "./componentes/organisms/Header";
-import Buscador from "./componentes/organisms/Header";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/organisms/Header";
+import Navbar from "./components/organisms/Navbar";
+import Inicio from "./assets/pages/Inicio";
+import Productos from "./assets/pages/Productos";
+import Footer from "./components/organisms/Footer";
+import Contactos from "./assets/pages/Contactos";
+
 
 
 function App(){
   return(
-    <div>
-      
-     <Header/>
-      
-    </div>
+    <>
+      <Navbar/>
 
-  );
+      <Routes>
+
+        <Route 
+        path="/"
+        element={<Inicio/>}
+
+        />
+        <Route
+        path="/productos"
+        element={<Productos/>}
+        />
+
+        <Route
+        path="/contactos"
+        element={<Contactos/>}
+        />
+
+      </Routes>
+
+      <Footer/>
+    </>
+  )
+  
 }
 
 
