@@ -30,6 +30,14 @@ function Productos(){
                 imagen="public/img/teclado-img.jpg"
                 />
 
+                 <CardProducto
+                 id={4}
+                titulo="Audufono"
+                descripcion="ideal para el NoteBook "
+                precio={10000}
+                imagen="public/img/audifono.jpg"
+                />
+
                 
             </div>
 
