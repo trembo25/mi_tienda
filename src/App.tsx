@@ -7,6 +7,8 @@ import Inicio from "./assets/pages/Inicio";
 import Productos from "./assets/pages/Productos";
 import Footer from "./components/organisms/Footer";
 import Contactos from "./assets/pages/Contactos";
+import DetalleProducto from "./assets/pages/DetalleProducto";
+
 
 
 
@@ -31,10 +33,16 @@ function App(){
         path="/contactos"
         element={<Contactos/>}
         />
+        
+        <Route
+        path="/producto/:id"
+        element = {<DetalleProducto/>}
+        />
 
       </Routes>
 
       <Footer/>
+
     </>
   )
   
