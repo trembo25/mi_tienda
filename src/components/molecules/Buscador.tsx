@@ -7,7 +7,7 @@ function Buscador(){
             <input type="text"
             placeholder="Buscar Producto" />
 
-            <Boton/>
+            <Boton id={id} />
         </div>
     );
 }

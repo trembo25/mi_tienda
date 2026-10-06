@@ -7,9 +7,9 @@ function Boton({id}: BotonProps){
     return(
         <Link 
         to={`/producto/${id}`}
-        className = "btn btn-danger"
+        className = "btn btn-primary"
         >
-        
+        ver producto
         </Link>
     );
 }

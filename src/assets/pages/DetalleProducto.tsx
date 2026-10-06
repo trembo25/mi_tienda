@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom"
+import BotonVolver from "../../components/atoms/BotonVolver"
 
 const productos = [
             {
@@ -6,7 +7,7 @@ const productos = [
                 titulo:"NoteBook",
                 descripcion:"NoteBook ideal para estudiar ",
                 precio:10000000,
-                imagen:"public/img/notebook-img.jpg"
+                imagen:"/img/notebook-img.jpg"
                 
             },
 
@@ -16,7 +17,7 @@ const productos = [
                 titulo:"Mouse",
                 descripcion:"ideal para el NoteBook ",
                 precio:10000,
-                imagen:"public/img/mause-img.jpg"
+                imagen:"/img/mause-img.jpg"
                 
             },
                 
@@ -25,7 +26,7 @@ const productos = [
                 titulo:"Teclado",
                 descripcion:"ideal para el NoteBook ",
                 precio:100000000000000000,
-                imagen:"public/img/teclado-img.jpg"
+                imagen:"/img/teclado-img.jpg"
                 
             }   
     ]   
@@ -42,12 +43,16 @@ function DetalleProducto(){
             <img 
             src={producto?.imagen}
             alt={producto?.titulo} 
-            style={{width: '30px'}}
+            style={{width: '300px'}}
             />
 
             <h2> {producto?.titulo}</h2>
             <p>{producto?.descripcion}</p>
             <p>{producto?.precio}</p>
+            <div>
+                 <BotonVolver/>
+            </div>
+           
         </div>
     )
            
