@@ -29,11 +29,11 @@ function FormularioContacto() {
       alert("Por favor ingrese su mensaje");
       return;
     }
-    alert (`Gracias por contactarnos, ${nombre}. Hemos recibido tu mensaje: "${mensaje}". Te responderemos a la brevedad al correo ${email}.`);
+    alert (`Gracias por contactarnos, ${nombre}. Hemos recibido tu mensaje. Te responderemos a la brevedad al correo ${email}.`);
   };
 
   return (
-    <form onSubmit={mensajeFormulario}>
+    <form onSubmit={mensajeFormulario} noValidate>
       <CampoFormulario
         etiqueta="Nombre"
         nombre="nombre"
