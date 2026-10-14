@@ -1,28 +1,27 @@
 import Buscador from "../molecules/Buscador";
-import CardProducto from "../molecules/CardProductos";
 
+function Header() {
+    return (
+        <header className="bg-dark text-white py-3 mb-4 shadow-sm">
+            <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                
+                {/* 1. Título / Logo */}
+                <h1 className="h3 m-0 text-center text-md-start">Mi Tienda</h1>
 
-function Header(){
-    return(
-        <header>
-            <h1> Mi tienda</h1>
+                {/* 2. Menú de Navegación */}
+                <nav className="d-flex gap-3 align-items-center">
+                    <a href="#" className="text-white text-decoration-none">Inicio</a>
+                    <a href="#" className="text-white text-decoration-none">Productos</a>
+                    <a href="#" className="text-white text-decoration-none">Contacto</a>
+                    <a href="#" className="btn btn-outline-light btn-sm ms-2">Login</a>
+                </nav>
 
-            <nav>
-                <a href="#">Inicio</a> |{" "}
-                <a href="#">Productos</a> |{" "}
-                <a href="#">Contacto</a>
-                <a href="#">Login</a>
-            </nav>
-            <br />
-            <Buscador/>
-            <CardProducto
-                id={1}
-                titulo="Producto destacado"
-                descripcion="Descripción del producto destacado"
-                precio={99.99}
-                imagen="https://via.placeholder.com/150"
-            />
+                {/* 3. Buscador */}
+                <div className="w-100 w-md-auto">
+                    <Buscador />
+                </div>
 
+            </div>
         </header>
     );
 }

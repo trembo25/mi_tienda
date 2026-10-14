@@ -28,7 +28,14 @@ const productos = [
                 precio:100000000000000000,
                 imagen:"/img/teclado-img.jpg"
                 
-            }   
+            },
+            {
+                id:4,
+                titulo:"Audifonos",
+                descripcion:"ideal para el NoteBook ",
+                precio:15000,
+                imagen:"/img/audifono.jpg"
+            }  
     ]   
 function DetalleProducto(){
 

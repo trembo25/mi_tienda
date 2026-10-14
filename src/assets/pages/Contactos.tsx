@@ -5,22 +5,24 @@ import FormularioContacto from "../../components/organisms/FormularioContacto";
 function Contactos() {
   return (
     <div className="container mt-4">
-      <h1>Contactos</h1>
-      <p>
-        Direccion av. Americo Vespucio 123
+      <h1 className="mb-3">Contactos</h1>
+      <p className="text-muted">
+        Dirección: Av. Américo Vespucio 123
         <br />
-        horario 24/7
+        Horario: 24/7
       </p>
 
-      <div className="row justify-content-center">
-        <div className="col-12 col-md-7">
-          <div className="card shadow p-3 mb-5 bg-body rounded">
-            <h2>Formulario de contacto</h2>
-             <FormularioContacto />
+      {/* Fila centradora de la grilla */}
+      <div className="row justify-content-center mt-4">
+        
+        {/* Columna responsiva con las clases solicitadas */}
+        <div className="col-12 col-md-8 col-lg-6">
+          <div className="card shadow p-4 mb-5 bg-body rounded">
+            <h2 className="h4 text-center mb-3">Formulario de contacto</h2>
+            <FormularioContacto />
           </div>
         </div>
 
-        
       </div>
     </div>
   );

@@ -1,47 +1,61 @@
 import CardProducto from "../../components/molecules/CardProductos";
 
-function Productos(){
-    return(
-        <div>
-            <h1>Productos</h1>
+function Productos() {
+    return (
+        <div className="container mt-4">
+            <h1 className="mb-4">Productos</h1>
+            
+            {/* Contenedor Grid responsivo */}
+            <div className="row g-3">
 
-            <div className="d-flex gap-3">
-                <CardProducto
-                id={1}
-                titulo="NoteBook"
-                descripcion="NoteBook ideal para estudiar "
-                precio={10000000}
-                imagen="public/img/notebook-img.jpg"
-                />
+                {/* Producto 1 */} {/* el d-flex align-items-stretch
+                                     hace que las tarjetas tengan la misma altura */}
+                <div className="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+                    <CardProducto
+                        id={1}
+                        titulo="Notebook"
+                        descripcion="Notebook ideal para estudiar"
+                        precio={1000000}
+                        imagen="/img/notebook-img.jpg"
+                    />
+                </div>
 
-                 <CardProducto
-                 id={2}
-                titulo="Mouse"
-                descripcion="ideal para el NoteBook "
-                precio={10000}
-                imagen="public/img/mause-img.jpg"
-                />
+                {/* Producto 2 */}
+                <div className="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+                    <CardProducto
+                        id={2}
+                        titulo="Mouse"
+                        descripcion="Ideal para el Notebook"
+                        precio={10000}
+                        imagen="/img/mause-img.jpg"
+                    />
+                </div>
 
-                 <CardProducto
-                 id={3}
-                titulo="Teclado"
-                descripcion="ideal para el NoteBook "
-                precio={100000000000000000}
-                imagen="public/img/teclado-img.jpg"
-                />
+                {/* Producto 3 */}
+                <div className="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+                    <CardProducto
+                        id={3}
+                        titulo="Teclado"
+                        descripcion="Ideal para el Notebook"
+                        precio={25000}
+                        imagen="/img/teclado-img.jpg"
+                    />
+                </div>
 
-                 <CardProducto
-                 id={4}
-                titulo="Audifono"
-                descripcion="ideal para el NoteBook "
-                precio={10000}
-                imagen="public/img/audifono.jpg"
-                />
+                {/* Producto 4 */}
+                <div className="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+                    <CardProducto
+                        id={4}
+                        titulo="Audífonos"
+                        descripcion="Ideal para el Notebook"
+                        precio={15000}
+                        imagen="/img/audifono.jpg"
+                    />
+                </div>
 
-                
             </div>
-
         </div>
-    )
+    );
 }
-export default Productos
+
+export default Productos;

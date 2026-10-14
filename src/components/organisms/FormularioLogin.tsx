@@ -20,7 +20,7 @@ function FormularioLogin() {
             alert("Por favor ingrese su contraseña");
             return;
         }
-        if (password.length > 8) {
+        if (password.length < 8) {
             alert("La contraseña debe tener al menos 8 caracteres");
             return;
         }
