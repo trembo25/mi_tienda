@@ -32,7 +32,7 @@ function Productos(){
 
                  <CardProducto
                  id={4}
-                titulo="Audufono"
+                titulo="Audifono"
                 descripcion="ideal para el NoteBook "
                 precio={10000}
                 imagen="public/img/audifono.jpg"

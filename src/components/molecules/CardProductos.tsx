@@ -17,7 +17,7 @@ function CardProducto({id, titulo,descripcion,precio,imagen}:CardProps){
             src={imagen}
             className="card-img-top"
             alt={titulo}
-            style={{height: "200px", objectFit: "contain"}}
+            style={{height: "200px", objectFit: "cover"}}
              />
 
             <div className="card-body d-flex flex-column">

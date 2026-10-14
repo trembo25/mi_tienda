@@ -8,6 +8,7 @@ import Productos from "./assets/pages/Productos";
 import Footer from "./components/organisms/Footer";
 import Contactos from "./assets/pages/Contactos";
 import DetalleProducto from "./assets/pages/DetalleProducto";
+import Login from "./assets/pages/Login";
 
 
 
@@ -37,6 +38,11 @@ function App(){
         <Route
         path="/producto/:id"
         element = {<DetalleProducto/>}
+        />
+
+        <Route
+        path="/login"
+        element = {<Login/>}
         />
 
       </Routes>

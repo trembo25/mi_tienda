@@ -11,6 +11,7 @@ function Header(){
                 <a href="#">Inicio</a> |{" "}
                 <a href="#">Productos</a> |{" "}
                 <a href="#">Contacto</a>
+                <a href="#">Login</a>
             </nav>
             <br />
             <Buscador/>
